@@ -37,3 +37,12 @@ while (x < 5) {
     x += 1
         //adding break to loop
 }
+
+//Assignment1 - While loop that prints out even numbers
+var result = 0
+while (result <= 10) {
+    if (result % 2 == 0) {
+        console.log("This is an even number: " + result)
+    }
+    result += 1
+}
