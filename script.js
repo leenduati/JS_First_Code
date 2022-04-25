@@ -108,3 +108,24 @@ for (let index = 0; index < 26; index++) {
     }
 
 }
+
+//JS Final Project
+
+var firstName = prompt("Please enter your first name: ");
+var secondName = prompt("Please enter your second name:");
+var age = prompt("Please enter your age: ");
+var height = prompt("Please enter your height in cm: ");
+var pet = prompt("Please enter your pet's name: ");
+
+for (let petLastName = 0; petLastName < pet.length; petLastName++) {
+    result = pet[petLastName];
+
+}
+
+console.log(result)
+
+if (firstName[0] == secondName[0] && 20 < age < 30 && height >= 170 && result == "y") {
+    console.log("Welcome to the brotherhood spy!!!!");
+} else {
+    console.log("Nothing to see here HUMAN!!!");
+}
