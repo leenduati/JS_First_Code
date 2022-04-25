@@ -46,3 +46,4 @@ while (result <= 10) {
     }
     result += 1
 }
+//for loops
