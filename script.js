@@ -308,3 +308,55 @@ else{
   return false
 }
 }
+
+//arrays
+// newArray = []
+var countries = ["USA", "Germany", "China"];
+console.log(countries[1]);
+countries[1] = "Kenya";
+//immutable //mutable an array is mutable //Stirngs are immutable
+var rando = [1, true, "string"];
+rando.length
+//array methods
+//remove last item. array.pop(), add an element, return last item, array[length - 1]
+//we can do nested arrays
+//array irretariton //for of is for arrays, for in ids for objects
+for (const iterator of rando) {
+  console.log(iterator)
+  
+  
+}
+
+
+const array1 = ['a', 'b', 'c'];
+//for each using an arrow function
+array1.forEach(element => console.log(element));
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
+
+// Arrow function
+// forEach((element) => { /* ... */ })
+// forEach((element, index) => { /* ... */ })
+// forEach((element, index, array) => { /* ... */ })
+
+// // Callback function
+// forEach(callbackFn)
+// forEach(callbackFn, thisArg)
+
+// // Inline callback function
+// forEach(function(element) { /* ... */ })
+// forEach(function(element, index) { /* ... */ })
+// forEach(function(element, index, array){ /* ... */ })
+// forEach(function(element, index, array) { /* ... */ }, thisArg)
+
+function awesomo(para) {
+  console.log(para + " is soo cool");
+  
+}
+
+var array_awe = ["django", "python", "javascript", "react"];
+
+array_awe.forEach(haha => {
+  awesomo(haha)
