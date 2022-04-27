@@ -360,3 +360,103 @@ var array_awe = ["django", "python", "javascript", "react"];
 
 array_awe.forEach(haha => {
   awesomo(haha)
+    
+    
+ //Student Roster App Array Excercise
+
+// PART 4 ARRAY EXERCISE
+// This is  a .js file with commented hints, its optional to use this.
+
+// Create Empty Student Roster Array
+// This has been done for you!
+var roster = []
+
+// Create the functions for the tasks
+// ADD A NEW STUDENT
+var input = prompt("Would you like to start the roster web app? y/n")
+// Create a function called addNew that takes in a name
+// and uses .push to add a new student to the array
+function quitArray(){
+  alert("Thanks for using the Web App! Please refresh the page to start over")
+  console.log(roster)
+}
+
+function continueArray(){
+  var result = prompt
+("Please select an action: add, remove, display, or quit")
+// while(result != "quit"){
+if(result == "add"){
+  var addy = prompt("Which name do you want to add to array? ")
+  roster.push(addy);
+  console.log(roster)
+  continueArray();
+
+}
+else if(result == "remove"){
+  var remo = prompt("Which entry do you want to remove? ")
+  for (let index = 0; index < roster.length; index++) {
+    if(roster[index].toLowerCase() == remo){
+      roster.splice(index, 1)
+      console.log(roster)
+
+    }
+    continueArray()
+    // else{
+    //   console.log("Entry selected not found: ")
+    // }
+  
+}
+}
+else if(result.toLowerCase() == "display"){
+  console.log(roster)
+  var action = prompt("Would you like to contiunue after viewing the array? y/n ")
+  if(action == "y"){
+    continueArray()
+  }
+  else if(action == "n"){
+    quitArray()
+  }
+  
+
+}
+else if (result == "quit"){
+  quitArray();
+}
+else{
+  alert("Select either add, remove, display or quit; Refresh page please")
+  continueArray()
+}
+}
+
+function addNewArray(){
+  if(input == "y"){
+continueArray();
+  }
+  else if(input == "n"){
+    quitArray();
+  }
+  else{
+    alert("Please select y/n")
+    // addNewArray()
+  }
+}
+
+addNewArray();
+// REMOVE STUDENT
+
+// Create a function called remove that takes in a name
+// Finds its index location, then removes that name from the roster
+
+// HINT: http://stackoverflow.com/questions/5767325/how-to-remove-a-particular-element-from-an-array-in-javascript
+//
+
+// DISPLAY ROSTER
+
+// Create a function called display that prints out the orster to the console.
+
+
+// Start by asking if they want to use the web app
+
+// Now create a while loop that keeps asking for an action (add,remove, display or quit)
+// Use if and else if statements to execute the correct function for each command.
+
