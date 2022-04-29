@@ -455,7 +455,48 @@ var car_hire = {
     year: 1995,
     true: "yes, it is true",
     hello: 35,
-    obj_arr: [36, "jojo", false]
+    obj_arr: [36, "jojo", false],
+    34: "I am 34 years old",
+    fn: function helloWorld() {
+        console.log("Hello Guy!!!")
+    }
 };
 
 console.log(car_hire)
+    // Reference keys via doule quites, eg.
+console.log(car_hire["hello"]);
+//objects can have values of various data types
+car_hire["obj_arr"]["length"]
+    //change the value of a key by:
+car_hire["year"] = 2006
+console.log(car_hire)
+    //iterate thru an car_hire using for in
+for (key in car_hire) {
+    console.log("These are keys " + key);
+    //for iteration within values, use
+    console.log("These are values " + car_hire[key])
+}
+
+//Object Methods
+// insert a function inside the object above and call it as a method using the dot notation eg car.fn
+car_hire.fn()
+    // In JavaScript, the this keyword refers to an object.
+
+// Which object depends on how this is being invoked (used or called).
+
+// The this keyword refers to different objects depending on how it is used:
+
+// In an object method, this refers to the object.
+// Alone, this refers to the global object.
+// In a function, this refers to the global object.
+// In a function, in strict mode, this is undefined.
+// In an event, this refers to the element that received the event.
+// Methods like call(), apply(), and bind() can refer this to any object.
+//To show actual property in an object, use this
+var objName = {
+        name: "lee",
+        callName: function() {
+            console.log("Hello " + this.name)
+        }
+    }
+    // Without the this keyword, the name referenced above produces a deprecated error,meaning it's void
