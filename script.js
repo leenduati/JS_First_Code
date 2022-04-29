@@ -111,24 +111,24 @@ for (let index = 0; index < 26; index++) {
 
 //JS Final Project
 
-var firstName = prompt("Please enter your first name: ");
-var secondName = prompt("Please enter your second name:");
-var age = prompt("Please enter your age: ");
-var height = prompt("Please enter your height in cm: ");
-var pet = prompt("Please enter your pet's name: ");
+// var firstName = prompt("Please enter your first name: ");
+// var secondName = prompt("Please enter your second name:");
+// var age = prompt("Please enter your age: ");
+// var height = prompt("Please enter your height in cm: ");
+// var pet = prompt("Please enter your pet's name: ");
 
-for (let petLastName = 0; petLastName < pet.length; petLastName++) {
-    result = pet[petLastName];
+// for (let petLastName = 0; petLastName < pet.length; petLastName++) {
+//     result = pet[petLastName];
 
-}
+// }
 
-console.log(result)
+// console.log(result)
 
-if (firstName[0] == secondName[0] && 20 < age < 30 && height >= 170 && result == "y") {
-    console.log("Welcome to the brotherhood spy!!!!");
-} else {
-    console.log("Nothing to see here HUMAN!!!");
-}
+// if (firstName[0] == secondName[0] && 20 < age < 30 && height >= 170 && result == "y") {
+//     console.log("Welcome to the brotherhood spy!!!!");
+// } else {
+//     console.log("Nothing to see here HUMAN!!!");
+// }
 
 // FUNCTION EXERCISES - SOLUTIONS
 
@@ -156,18 +156,16 @@ if (firstName[0] == secondName[0] && 20 < age < 30 && height >= 170 && result ==
 // sleepIn(false, true) → true
 
 function sleepIn(weekday, vacation) {
-  //Code Goes Here
-if(weekday && !vacation){
-  return false
-}
-else if(!weekday && !vacation){
-  return true
-}
-else if(!weekday && vacation){
-return true}
-else{
-  return "Situation Doesn't Exist"
-}
+    //Code Goes Here
+    if (weekday && !vacation) {
+        return false
+    } else if (!weekday && !vacation) {
+        return true
+    } else if (!weekday && vacation) {
+        return true
+    } else {
+        return "Situation Doesn't Exist"
+    }
 }
 
 
@@ -187,14 +185,12 @@ else{
 
 function monkeyTrouble(aSmile, bSmile) {
     //Code Goes Here
-    if(aSmile && bSmile){
-      return true
-    }
-    else if(!aSmile && !bSmile){
-      return true
-    }
-    else if(aSmile && !bSmile){
-      return false
+    if (aSmile && bSmile) {
+        return true
+    } else if (!aSmile && !bSmile) {
+        return true
+    } else if (aSmile && !bSmile) {
+        return false
     }
 }
 
@@ -215,11 +211,11 @@ function stringTimes(str, n) {
     //Code Goes Here
     result = "";
     for (let index = 0; index < n; index++) {
-      for (let j = 0; j < str.length; j++) {
-        result += str[j]
-        
-      }
-      
+        for (let j = 0; j < str.length; j++) {
+            result += str[j]
+
+        }
+
     }
     return result
 }
@@ -238,20 +234,17 @@ function stringTimes(str, n) {
 // luckySum(1, 2, 13) → 3
 // luckySum(1, 13, 3) → 1
 
-function luckySum(a, b, c){
-   //Code Goes Here
-  if(a === 13){
-    return null
-  }
-  else if(b === 13){
-    return a
-  }
-  else if(c === 13){
-    return a + b
-  }
- else{
-   return a + b + c
- }
+function luckySum(a, b, c) {
+    //Code Goes Here
+    if (a === 13) {
+        return null
+    } else if (b === 13) {
+        return a
+    } else if (c === 13) {
+        return a + b
+    } else {
+        return a + b + c
+    }
 }
 
 // PROBLEM 5:
@@ -268,18 +261,15 @@ function luckySum(a, b, c){
 // caught_speeding(65, false) → 1
 // caught_speeding(65, true) → 0
 
-function caught_speeding(speed, is_birthday){
-  //Code Goes Here
-  if(speed <60 && !is_birthday){
-    return 0
-  }
-
-  else if(61 < speed <= 80 && !is_birthday){
-    return 1
-  }
-  else if(speed > 80){
-    return 2
-  }
+function caught_speeding(speed, is_birthday) {
+    //Code Goes Here
+    if (speed < 60 && !is_birthday) {
+        return 0
+    } else if (61 < speed <= 80 && !is_birthday) {
+        return 1
+    } else if (speed > 80) {
+        return 2
+    }
 }
 
 
@@ -296,17 +286,16 @@ function caught_speeding(speed, is_birthday){
 // makeBricks(3, 1, 9) → false
 // makeBricks(3, 2, 10) → true
 
-function makeBricks(small, big, goal){
-  //Code Goes Here
-  numOfSmalls = small * 1
-  numOfBigs = big * 5
-  result = numOfSmalls + numOfBigs
-  if(result == goal || goal > result){
-    return true
-  }
-else{
-  return false
-}
+function makeBricks(small, big, goal) {
+    //Code Goes Here
+    numOfSmalls = small * 1
+    numOfBigs = big * 5
+    result = numOfSmalls + numOfBigs
+    if (result == goal || goal > result) {
+        return true
+    } else {
+        return false
+    }
 }
 
 //arrays
@@ -317,14 +306,14 @@ countries[1] = "Kenya";
 //immutable //mutable an array is mutable //Stirngs are immutable
 var rando = [1, true, "string"];
 rando.length
-//array methods
-//remove last item. array.pop(), add an element, return last item, array[length - 1]
-//we can do nested arrays
-//array irretariton //for of is for arrays, for in ids for objects
+    //array methods
+    //remove last item. array.pop(), add an element, return last item, array[length - 1]
+    //we can do nested arrays
+    //array irretariton //for of is for arrays, for in ids for objects
 for (const iterator of rando) {
-  console.log(iterator)
-  
-  
+    console.log(iterator)
+
+
 }
 
 
@@ -352,96 +341,91 @@ array1.forEach(element => console.log(element));
 // forEach(function(element, index, array) { /* ... */ }, thisArg)
 
 function awesomo(para) {
-  console.log(para + " is soo cool");
-  
+    console.log(para + " is soo cool");
+
 }
 
 var array_awe = ["django", "python", "javascript", "react"];
 
 array_awe.forEach(haha => {
-  awesomo(haha)
-    
-    
- //Student Roster App Array Excercise
+    awesomo(haha)
+})
+
+
+//Student Roster App Array Excercise
 
 // PART 4 ARRAY EXERCISE
 // This is  a .js file with commented hints, its optional to use this.
 
 // Create Empty Student Roster Array
 // This has been done for you!
-var roster = []
+
+var roster = [];
 
 // Create the functions for the tasks
 // ADD A NEW STUDENT
-var input = prompt("Would you like to start the roster web app? y/n")
+// var input = prompt("Would you like to start the roster web app? y/n")
 // Create a function called addNew that takes in a name
 // and uses .push to add a new student to the array
-function quitArray(){
-  alert("Thanks for using the Web App! Please refresh the page to start over")
-  console.log(roster)
-}
+// function quitArray() {
+//     alert("Thanks for using the Web App! Please refresh the page to start over")
+//     console.log(roster)
+// }
 
-function continueArray(){
-  var result = prompt
-("Please select an action: add, remove, display, or quit")
-// while(result != "quit"){
-if(result == "add"){
-  var addy = prompt("Which name do you want to add to array? ")
-  roster.push(addy);
-  console.log(roster)
-  continueArray();
+// function continueArray() {
+//     var result = prompt("Please select an action: add, remove, display, or quit")
+//         // while(result != "quit"){
+//     if (result == "add") {
+//         var addy = prompt("Which name do you want to add to array? ")
+//         roster.push(addy);
+//         console.log(roster)
+//         continueArray();
 
-}
-else if(result == "remove"){
-  var remo = prompt("Which entry do you want to remove? ")
-  for (let index = 0; index < roster.length; index++) {
-    if(roster[index].toLowerCase() == remo){
-      roster.splice(index, 1)
-      console.log(roster)
+//     } else if (result == "remove") {
+//         var remo = prompt("Which entry do you want to remove? ")
+//         for (let index = 0; index < roster.length; index++) {
+//             if (roster[index].toLowerCase() == remo) {
+//                 roster.splice(index, 1)
+//                 console.log(roster)
 
-    }
-    continueArray()
-    // else{
-    //   console.log("Entry selected not found: ")
-    // }
-  
-}
-}
-else if(result.toLowerCase() == "display"){
-  console.log(roster)
-  var action = prompt("Would you like to contiunue after viewing the array? y/n ")
-  if(action == "y"){
-    continueArray()
-  }
-  else if(action == "n"){
-    quitArray()
-  }
-  
+//             }
+//             continueArray()
+//                 // else{
+//                 //   console.log("Entry selected not found: ")
+//                 // }
 
-}
-else if (result == "quit"){
-  quitArray();
-}
-else{
-  alert("Select either add, remove, display or quit; Refresh page please")
-  continueArray()
-}
-}
+//         }
+//     } else if (result.toLowerCase() == "display") {
+//         console.log(roster)
+//         var action = prompt("Would you like to contiunue after viewing the array? y/n ")
+//         if (action == "y") {
+//             continueArray()
+//         } else if (action == "n") {
+//             quitArray()
+//         }
 
-function addNewArray(){
-  if(input == "y"){
-continueArray();
-  }
-  else if(input == "n"){
-    quitArray();
-  }
-  else{
-    alert("Please select y/n")
-    // addNewArray()
-  }
-}
 
-addNewArray();
+//     } else if (result == "quit") {
+//         quitArray();
+//     } else {
+//         alert("Select either add, remove, display or quit; Refresh page please")
+//         continueArray()
+//     }
+// }
+
+// function addNewArray() {
+//     if (input == "y") {
+//         continueArray();
+//     } else if (input == "n") {
+//         quitArray();
+//     } else {
+//         alert("Please select y/n")
+//             // addNewArray()
+//     }
+// }
+
+// addNewArray();
+
 // REMOVE STUDENT
 
 // Create a function called remove that takes in a name
@@ -458,5 +442,20 @@ addNewArray();
 // Start by asking if they want to use the web app
 
 // Now create a while loop that keeps asking for an action (add,remove, display or quit)
-// Use if and else if statements to execute the correct function for each command.
+// Use if and else if statements to execute the correct function for each command
 
+//Objects
+
+//Written as {key1: "Value one", key2: "value two:, ..."}
+
+var car_hire = {
+    color: "red",
+    design: "toyota",
+    make: "corolla",
+    year: 1995,
+    true: "yes, it is true",
+    hello: 35,
+    obj_arr: [36, "jojo", false]
+};
+
+console.log(car_hire)
