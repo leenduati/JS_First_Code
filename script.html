@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="color-scheme" content="dark">
+    <!-- Meta keyword above used to change to dark theme  -->
     <title>JavaScript First Exercise</title>
 </head>
 
 <body>
+    <!-- <iframe width="420" height="420" src="./index.html" title="W3Schools Free Online Web Tutorials"></iframe> -->
     <div class="container">
         <h1>Welcome to your First Exercise!</h1>
         <p>For this exercise we will be creating a weight metric converter</p>
@@ -30,16 +32,13 @@
 
     </div>
 
-    <!-- This links to the solution .js file, link to your own first! -->
-    <script src=" ./script.js "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <div class="container">
 
 
 
         <h1>Welcome to Part 8: Your JavaScript Level One Project!</h1>
-        <p>For this project you will be building a generic website that will seem to ask mundane questions to normal users, but you secretly are looking for a spy! Anyone visiting your website will be asked a series of questions, only the Spy will be able
+        <p id="par">For this project you will be building a generic website that will seem to ask mundane questions to normal users, but you secretly are looking for a spy! Anyone visiting your website will be asked a series of questions, only the Spy will be able
             to give specific answers you expect. If all questions are answered correctly, you will post a secret message in console for the Spy to read!
         </p>
 
@@ -65,10 +64,32 @@
         <p>Keep in mind you can ask the question prompts in whatever order you want, you can even separate asking for first name and then another prompt for last name</p>
         <p>Also remember to switch out the script src to your own .js file! Right now it's connected to Part8.js which contains the solutions</p>
 
+        <h2>Let's talk about changing text, html content, and attributes with the DOM</h2>
+        <p class="par-class">To Edit Styles, we've already seen we can use the .style tag. Now if we want to edit <strong>actual html or text</strong> or
+            <a title="Google Homepage" href="http://www.google.com">attributes</a> we can use different methods. If you want to change the text,html content, or attributes you can use the following:
+        </p>
+
+        <ul>
+            <li>myvariable.textContent - This returns just the text</li>
+            <li>myvariable.innerHTML - This returns the actual html</li>
+            <li>myvariable.getAttribute() - This returns the original attribute</li>
+            <li>myvariable.setAttribute() - This allowed you to set an attribute</li>
+        </ul>
+
+        <h4 id="special">I am another <em>header</em> with the special id.
+            <a href="https://www.facebook.com" target="_blank" rel="noopener">FACEBOOK LINK</a>
+        </h4>
+
+        <div class="container">
+            <h1 id="one">Hover OVER ME!!!</h1>
+            <h1 id="two">CLICK ME!!!</h1>
+            <h1 id="three">DOUBLE CLICK ME!!!</h1>
+        </div>
     </div>
-    <script src="./script.js"></script>
 
-
+    <!-- This links to the solution .js file, link to your own first! Always remember to put JS Script at the end-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src=" ./script.js "></script>
 </body>
 
 </html>

@@ -576,7 +576,49 @@ function changeHeaderColor() {
 
     headTag.style.color = randomColor[out]
 }
-setInterval("changeHeaderColor()", 50) //call a function every 500 ms
+// setInterval("changeHeaderColor()", 50) //call a function every 500 ms
 changeHeaderColor()
-    // sheadTag.style.color = "red"
+    // headTag.style.color = "red"
 Math.random()
+
+// data-* attributes allow us to store extra information on standard, semantic HTML elements without other hacks such as non-standard attributes, or extra properties on DOM.
+
+var p = document.getElementById("par")
+var pClass = document.querySelector(".par-class")
+pClass.innerText = "haha"
+    //use inerHTML to add html tags eg
+pClass.innerHTML = "<em>Haha Msee</em>";
+
+console.log(p)
+var special = document.querySelector("#special")
+    // Call an element within an element by
+var specialA = special.querySelector("a")
+
+// Change attribute by set attribute
+specialA.setAttribute("href", "https://google.com")
+
+//DOM EVENTS : Using JS to trigger events
+// Syntax myvar.addEventListener(event, func) e.g. head.addEventListener("cick", changeColor)
+var head1 = document.querySelector("#one")
+var head2 = document.querySelector("#two")
+var head3 = document.querySelector("#three")
+
+head1.setAttribute("title", "Hover over me")
+head1.addEventListener("mouseover", function() {
+    // mouse over will not change back after
+    head1.style.backgroundColor = "yellow";
+})
+
+head1.addEventListener("mouseout", function() {
+    head1.style.backgroundColor = "black"
+    head1.style.color = "white"
+})
+
+head2.addEventListener("click", function() {
+    head2.innerHTML = "<strong>Clicked kapsaa</strong>"
+})
+
+head3.addEventListener("ondblclick", function() {
+        head3.style.fontSize = "2000 px";
+    })
+    // double click not working
