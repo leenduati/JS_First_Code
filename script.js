@@ -563,3 +563,20 @@ var employee = {
 
 // You will need to figure out how to split a string to an array.
 // Hint: http://www.w3schools.com/jsref/jsref_split.asp
+
+//Document Object Module Use DOM JS tointeract with the webpage. TYpe Document/ console.dir(documeny) on Console window then enter to view the webpage DOM
+// thre are many document.(methods) for grabbing html attributes eg. document.getElemntById(), byClasName, ByTagname, querySelector selects 1st object for css selector, selectorAll selects all objects.
+
+var randomColor = ["red", "blue", "green", "purple", "cyan", "turqoise"];
+var headTag = document.querySelector("h1")
+
+
+function changeHeaderColor() {
+    var out = Math.ceil(Math.random() * randomColor.length)
+
+    headTag.style.color = randomColor[out]
+}
+setInterval("changeHeaderColor()", 50) //call a function every 500 ms
+changeHeaderColor()
+    // sheadTag.style.color = "red"
+Math.random()
