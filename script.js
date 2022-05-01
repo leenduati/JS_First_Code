@@ -622,3 +622,46 @@ head3.addEventListener("ondblclick", function() {
         head3.style.fontSize = "2000 px";
     })
     // double click not working
+
+//DOM EXERCISE DESIGN GAME TIC TAC TOE
+//
+tableData = document.querySelectorAll("td")
+    //function to switch thru tic tac toe
+
+//choose random X O ""
+function chooseRand() {
+    var randTic = ["X", "O", ""]
+    var randMath = Math.floor(Math.random() * randTic.length)
+    return randMath
+}
+
+chooseRand()
+
+function changeTic() {
+    var randTic = ["X", "O"]
+    var randMath = Math.floor(Math.random() * randTic.length)
+    if (this.innerHTML === "") {
+        this.innerHTML = randTic[randMath]
+    } else if (this.innerHTML === "X") {
+        this.innerHTML = randTic[randMath]
+    } else {
+        this.innerHTML = randTic[randMath]
+    }
+
+}
+
+for (let index = 0; index < tableData.length; index++) {
+    tableData[index].addEventListener("click", changeTic)
+
+
+}
+
+
+//reload button
+var btn = document.querySelector("#btn")
+btn.addEventListener("click", function() {
+    for (let index = 0; index < tableData.length; index++) {
+        tableData[index].innerHTML = " "
+        console.log(index)
+    }
+})
